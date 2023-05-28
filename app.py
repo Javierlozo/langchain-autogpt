@@ -8,10 +8,6 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper
-from flask import Flask
-
-
-app = Flask(__name__)
 
 openai_api_key = os.getenv('OPENAI_API_KEY')
 
