@@ -23,7 +23,7 @@ title_template = PromptTemplate(
 
 script_template = PromptTemplate(
     input_variables = ['title', 'wikipedia_research'],
-    template = 'Write me a youtube script base on this title TITLE: {title} while leveraging this wikipedia reserch: {wiki}'
+    template = 'Write me a youtube script base on this title TITLE: {title} while leveraging this wikipedia reserch: {wikipedia_research}'
 )
 
 # Memory
@@ -46,7 +46,7 @@ if prompt:
     st.write(title)    
     st.write(script)
 
-    with st.expander('Message History'):
+    with st.expander('Title History'):
         st.info(title_memory.buffer)
 
     with st.expander('Script History'):
