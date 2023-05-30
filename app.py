@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain, SequentialChain
+from langchain.chains import LLMChain
 from langchain.memory import ConversationBufferMemory
 from langchain.utilities import WikipediaAPIWrapper
 
